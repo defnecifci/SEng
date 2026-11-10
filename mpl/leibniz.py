@@ -8,7 +8,7 @@ def leibnitz_pi(n):
         pi += sign * 1 / (2 * i + 1)
     return pi * 4
 
-# --- Leibniz Pi Loop Fix ---
+# --- Leibniz Pi Loop ---
 diff = 0.0001
 i = 0
 while abs(leibnitz_pi(i) - accurate_pi) > diff:

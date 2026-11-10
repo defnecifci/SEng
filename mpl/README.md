@@ -14,7 +14,7 @@ A simple Python script that compares the convergence rates of two classic mathem
 
 ```python
 
-# --- Leibniz Pi Loop Fix ---
+# --- Leibniz Pi Loop ---
 diff = 0.0001
 i = 0
 while abs(leibnitz_pi(i) - accurate_pi) > diff:
