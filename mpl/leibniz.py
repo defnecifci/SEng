@@ -30,3 +30,18 @@ i = 1
 while abs(euler_pi(i) - accurate_pi) > diff:
     i += 1
 print(f"Euler iterations needed for {diff}: {i}")
+def wallis_pi(n):
+    product = 1.0
+    for i in range(1, n + 1):
+        term = ((2.0 * i) / (2.0 * i - 1.0)) * ((2.0 * i) / (2.0 * i + 1.0))
+        product *= term
+    return product * 2.0
+
+
+# --- Wallis Pi Loop ---
+diff = 0.0001
+i = 1
+while abs(wallis_pi(i) - accurate_pi) > diff:
+    i += 1
+
+print(f"Wallis iterations needed for {diff}: {i}")
